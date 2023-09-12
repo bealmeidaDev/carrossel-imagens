@@ -1,4 +1,4 @@
-const imagem = [
+const imagens = [
     "/imagem/imagem 1.jpg",
     "/imagem/imagem 2.jpg",
     "/imagem/imagem 3.webp",
@@ -6,14 +6,22 @@ const imagem = [
 
 ];
 
-let img = document.querySelector("img")
+let imagem= document.querySelector("img")
+let indice = 0;
 
-img.src = "/imagem/imagem 1.jpg";
+imagem.src = imagens[indice];
 
-function avancar () {
-console.log ("teste")
+function avancar() {
+if (indice < 3) {
+    indice++;
+} else {
+    indice = 0;
+}
+   
+
+    imagem.src = imagens[indice];
 }
 
-function voltar () {
-    console.log ("teste")
-    }
+function voltar() {
+    console.log("teste voltar")
+}

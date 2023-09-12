@@ -1,0 +1,23 @@
+
+        body {
+           background-color: bisque;
+           width: 90%;
+           margin: auto;
+        }
+        img {
+            display: block;
+            width: 11rem;
+            height: 10rem;
+        }
+        .conteudo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+           
+        }
+
+        .conteudo button {
+            height: 5rem;
+        }
+   
